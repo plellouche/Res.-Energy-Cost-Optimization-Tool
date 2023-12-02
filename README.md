@@ -4,12 +4,13 @@ Over the last decade, residential energy rates have shifted towards so-called �
 Data Sources:
 
 
-- https://radar.com/
+- https://www.geocod.io/docs/#geocoding
   - API which returns the latitude and longitude of a location from an address
 - https://developer.nrel.gov/docs/electricity/utility-rates-v3/#json-output-format
   API which returns basic rate information based on latitude and longitude
 - Only returns most basic rate components, therefore will be used to match a utility company to a user based on their location
 - Scraping rate schedules for the given utility (ex: https://www.pge.com/tariffs/electric.shtml)
+- Alternatively considering using OpenEI's utility rate API: https://apps.openei.org/services/doc/rest/util_rates/?version=3
 
 From here, appropriate rate schedules will have to be determined based on keywords such as “TOU”, “Residential”, 
 and the date (formats differ slightly from one utility to another but key words largely remain consistent). 
