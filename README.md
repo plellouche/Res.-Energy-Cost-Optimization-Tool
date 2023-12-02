@@ -28,15 +28,13 @@ Once the rate information is obtained, a tariff instance can be built with the f
 The tool will prompt the user to input a list of appliances they use regularly in their household based on a list of common appliances that will be presented to the user.
 From this list of appliances a daily consumption profile will be generated, and the associated daily and monthly energy cost will be calculated using the appropriate rate instance.
 The tool will then calculate the optimal consumption profile to minimize the overall cost of energy by proposing alternate times during which these appliances are used
-(off peak hours, avoiding staggered use to reduce demand charges, etc.).
-The tool will then present the solution to the user, offering the user the option to remove certain appliances from the calculation if they are unwilling to change their consumption as suggested by the tool.
-This will continue until the user is satisfied with the proposed solution,
-and will show the user how much they would be able to save on their monthly energy bill if they adopted this consumption behavior.
+(off peak hours, avoiding staggered use to reduce demand charges, etc.). Tool will generate a report with a side by side comparison of the current vs. optimized cost of each appliance.
+
+
 
 For each appliance and associated configuration, 
 an associated demand and energy cost will be generated. Costs for all utilities and different configurations will then be compiled and returned to the user, 
 allowing them to choose a configuration that fits their needs and see how much it will save them compared to their baseline configuration.
 
 Presentation
-The presentation for this project could consist of a simple command line interface, or a flask application could be created to represent the data. 
-This determination will be made at a later date once the project is better understood.
+Tool will generate a report with a side by side comparison of the current vs. optimized cost of each appliance.
